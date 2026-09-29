@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>StyleHub - Account</title>
+
+    <link rel="stylesheet" href="account.css">
+    <script src="auth.js" defer></script>
+    <script src="account.js" defer></script>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">👗 StyleHub</div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="cart.html">Cart</a>
+        <a href="account.html">Account</a>
+    </div>
+</nav>
+
+<main class="account-wrapper">
+
+    <h1>My Account</h1>
+    <p class="subtitle">
+        Welcome to StyleHub
+    </p>
+
+    <!-- Account options -->
+
+    <div class="account-options">
+
+        <button id="profileTab">
+            👤 My Profile
+        </button>
+
+        <button id="loginTab">
+            🔐 Login / Register
+        </button>
+
+    </div>
+
+    <!-- Login and Register section -->
+
+    <section id="authSection" class="account-card">
+
+        <div class="form-switch">
+            <button id="showLogin">Login</button>
+            <button id="showRegister">Register</button>
+        </div>
+
+        <!-- Login form -->
+
+        <form id="loginForm">
+
+            <h2>Login to StyleHub</h2>
+
+            <label>Email</label>
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label>Password</label>
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Enter password"
+                required
+            >
+
+            <button type="submit" class="main-btn">
+                Login
+            </button>
+
+        </form>
+
+        <!-- Register form -->
+
+        <form id="registerForm" hidden>
+
+            <h2>Create an Account</h2>
+
+            <label>Full Name</label>
+            <input
+                type="text"
+                id="regName"
+                placeholder="Enter full name"
+                required
+            >
+
+            <label>Email</label>
+            <input
+                type="email"
+                id="regEmail"
+                placeholder="Enter email"
+                required
+            >
+
+            <label>Password</label>
+            <input
+                type="password"
+                id="regPassword"
+                placeholder="Create password"
+                minlength="6"
+                required
+            >
+
+            <label>Confirm Password</label>
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm password"
+                minlength="6"
+                required
+            >
+
+            <button type="submit" class="main-btn">
+                Register
+            </button>
+
+        </form>
+
+        <p id="authMessage"></p>
+
+    </section>
+
+    <!-- Profile section -->
+
+    <section id="profileSection"
+             class="account-card"
+             hidden>
+
+        <h2>Customer Profile</h2>
+
+        <div class="profile-avatar">👤</div>
+
+        <p><strong>Name:</strong>
+            <span id="profileName"></span>
+        </p>
+
+        <p><strong>Email:</strong>
+            <span id="profileEmail"></span>
+        </p>
+
+        <p class="profile-note">
+            Welcome to your StyleHub customer account.
+        </p>
+
+        <button id="logoutBtn" class="main-btn">
+            Logout
+        </button>
+
+    </section>
+
+</main>
+
+</body>
+</html>

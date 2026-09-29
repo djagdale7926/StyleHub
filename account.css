@@ -1,0 +1,214 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fce4ec;
+    color: #1A1A2E;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 18px 5%;
+    background: #1A1A2E;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: pink;
+}
+
+/* Account page */
+
+.account-wrapper {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.account-wrapper h1 {
+    font-size: 40px;
+    color: #1A1A2E;
+}
+
+.subtitle {
+    margin: 12px 0 25px;
+    color: #555;
+}
+
+/* Account options */
+
+.account-options {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.account-options button {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #1A1A2E;
+    border-radius: 10px;
+    background: #1A1A2E;
+    color: #FFD700;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.account-options button:hover {
+    background: #E91E63;
+    color: white;
+}
+
+/* Forms and profile */
+
+.account-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    text-align: left;
+}
+
+.account-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1A1A2E;
+}
+
+.form-switch {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.form-switch button {
+    flex: 1;
+    padding: 12px;
+    background: #1A1A2E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.account-card label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+.account-card input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.main-btn {
+    display: block;
+    width: 100%;
+    margin-top: 22px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #E91E63;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    background: #1A1A2E;
+}
+
+#authMessage {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: #fce4ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+#profileSection p {
+    margin: 15px 0;
+    overflow-wrap: anywhere;
+}
+
+.profile-note {
+    color: #666;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .account-wrapper {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .account-wrapper h1 {
+        font-size: 30px;
+    }
+
+    .account-options {
+        flex-direction: column;
+    }
+
+    .account-card {
+        padding: 20px;
+    }
+}

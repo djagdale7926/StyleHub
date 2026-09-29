@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StyleHub - Products</title>
+
+    <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            👗 <span>StyleHub</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="products.html?category=Men">Men</a>
+            <a href="products.html?category=Women">Women</a>
+            <a href="products.html?category=Kids">Kids</a>
+            <a href="cart.html">🛒 Cart</a>
+
+            <div class="account-dropdown">
+                <a href="#" class="account-link">
+                    👤 Account ▾
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="account.html">My Profile</a>
+                    <a href="account.html">Login / Register</a>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- MAIN PRODUCTS LAYOUT -->
+    <main class="shop-layout">
+
+        <!-- VERTICAL FILTER SIDEBAR -->
+        <aside class="filter-section">
+
+            <h2>Filters</h2>
+
+            <!-- Search -->
+            <div class="filter-box">
+
+                <label for="searchInput">Search</label>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+
+            </div>
+
+            <!-- Category -->
+            <div class="filter-box">
+
+                <label for="categoryFilter">Category</label>
+
+                <select id="categoryFilter">
+
+                    <option value="All">All Categories</option>
+                    <option value="Men">Men</option>
+                    <option value="Women">Women</option>
+                    <option value="Kids">Kids</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="Footwear">Footwear</option>
+
+                </select>
+
+            </div>
+
+            <!-- Size -->
+            <div class="filter-box">
+
+                <label for="sizeFilter">Size</label>
+
+                <select id="sizeFilter">
+
+                    <option value="All">All Sizes</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="One Size">One Size</option>
+                    <option value="Adjustable">Adjustable</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="42">42</option>
+                    <option value="44">44</option>
+
+                </select>
+
+            </div>
+
+            <!-- Color -->
+            <div class="filter-box">
+
+                <label for="colorFilter">Color</label>
+
+                <select id="colorFilter">
+
+                    <option value="All">All Colors</option>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Pink">Pink</option>
+                    <option value="Green">Green</option>
+                    <option value="Purple">Purple</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Brown">Brown</option>
+                    <option value="Cream">Cream</option>
+                    <option value="Grey">Grey</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Maroon">Maroon</option>
+                    <option value="Navy Blue">Navy Blue</option>
+                    <option value="Light Blue">Light Blue</option>
+                    <option value="Sky Blue">Sky Blue</option>
+                    <option value="Multicolor">Multicolor</option>
+                    <option value="Golden">Golden</option>
+                    <option value="Beige">Beige</option>
+
+                </select>
+
+            </div>
+
+            <!-- Price -->
+            <div class="filter-box">
+
+                <label for="priceFilter">Price</label>
+
+                <select id="priceFilter">
+
+                    <option value="All">All Prices</option>
+                    <option value="1000">Under ₹1000</option>
+                    <option value="2000">Under ₹2000</option>
+                    <option value="3000">Under ₹3000</option>
+                    <option value="5000">Under ₹5000</option>
+
+                </select>
+
+            </div>
+
+            <!-- Reset -->
+            <button id="resetBtn" class="reset-btn">
+                Reset Filters
+            </button>
+
+        </aside>
+
+
+        <!-- PRODUCTS AREA -->
+        <section class="products-area">
+
+            <div class="result-info">
+
+                <h2 id="categoryTitle">
+                    All Products
+                </h2>
+
+                <p id="productCount">
+                    0 products found
+                </p>
+
+            </div>
+
+            <div
+                id="productContainer"
+                class="product-container">
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="auth.js"></script>
+    <script src="products.js"></script>
+
+</body>
+</html>
